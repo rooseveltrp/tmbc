@@ -25,8 +25,7 @@ Vagrant.configure("2") do |config|
         echo All Done! Check out http://192.168.33.10
     SCRIPT
 
-    config.vm.provision "shell"
-        config.vm.provision "shell", inline: $script
+    config.vm.provision "shell", inline: $script
 
 
 end
